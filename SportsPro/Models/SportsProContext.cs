@@ -14,9 +14,31 @@ namespace SportsPro.Models
         public DbSet<Country> Countries { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Incident> Incidents { get; set; }
+        public DbSet<User> Users { get; set; }
+        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // Add User seed and table
+            modelBuilder.Entity<User>().HasData(
+                new User
+                {
+                    UserId = 1,
+                    Username = "admin",
+                    Password = "P@ssw0rd",
+                    FullName = "John Doe",
+                    Role = "Admin"
+                },
+                new User
+                {
+                    UserId = 2,
+                    Username = "tech",
+                    Password = "P@ssw0rd",
+                    FullName = "John Doe",
+                    Role = "Technician"
+                }
+                );
+
             modelBuilder.Entity<Product>().HasData(
                 new Product
                 {

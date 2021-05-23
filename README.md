@@ -1,0 +1,1 @@
+# SportsProWS5: The Customers folder is under the pages folder in the application SportsProCore.RazorApp. There is one chtml page for each operation. The Index page contains the links for the Edit, Details and Delete operations.

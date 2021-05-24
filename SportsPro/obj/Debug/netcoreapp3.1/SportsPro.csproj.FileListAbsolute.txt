@@ -483,3 +483,9 @@ e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Raz
 e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Details.cshtml.g.cs
 e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Edit.cshtml.g.cs
 e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Customers\List.cshtml.g.cs
+D:\ASP Net\Project\Version2\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Create.cshtml.g.cs
+D:\ASP Net\Project\Version2\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Delete.cshtml.g.cs
+D:\ASP Net\Project\Version2\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Details.cshtml.g.cs
+D:\ASP Net\Project\Version2\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Edit.cshtml.g.cs
+D:\ASP Net\Project\Version2\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Customers\List.cshtml.g.cs
+D:\ASP Net\Project\Version2\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Error.cshtml.g.cs

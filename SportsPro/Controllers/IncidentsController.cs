@@ -23,17 +23,23 @@ namespace SportsPro.Controllers
         [Route("/incidents")]
         public async Task<IActionResult> List()
         {
+            //get status of filter
             string Filter = HttpContext.Session.GetString("Filter");
-            
-            var sportsProContext = _context.Incidents.Include(i => i.Customer).Include(i => i.Product).Include(i => i.Technician);
-            //if (Filter == "unassigned")
-            //{
-            //    sportsProContext.Where(i => i.TechnicianID == null);
-            //}
-            //if (Filter == "open")
-            //{
-            //    sportsProContext.Where(i => i.DateClosed == null);
-            //}
+            ViewBag.Filter = Filter;
+
+            //var sportsProContext = _context.Incidents.Include(i => i.Customer).Include(i => i.Product).Where(i => i.TechnicianID.Count == 0);
+            IQueryable<Incident> sportsProContext = _context.Incidents.Include(i => i.Customer).Include(i => i.Product).Include(i => i.Technician);
+            //var incident = from i in _context.Incidents select i;
+
+            //incident = incident.OrderBy(i.)
+            if (Filter == "unassigned")
+            {
+                sportsProContext= sportsProContext.Where(i => i.TechnicianID == null);
+            }
+            if (Filter == "open")
+            {
+                sportsProContext = sportsProContext.Where(i => i.DateClosed == null);
+            }
 
 
             return View(await sportsProContext.ToListAsync());

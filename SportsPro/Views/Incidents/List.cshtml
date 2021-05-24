@@ -1,8 +1,10 @@
 ﻿@model IEnumerable<SportsPro.Models.Incident>
+@using Microsoft.AspNetCore.Http
 
 @{
     ViewData["Title"] = "Index";
-}
+    
+    }
 
 <h1>Index</h1>
 
@@ -10,13 +12,13 @@
 
 <ul class="nav nav-pills">
     <li class="nav-item">
-        <a id="all" class="nav-link" asp-controller="Incidents" asp-action="FilterAll">All Incidents</a>
+        <a id="all" class="nav-link @(ViewBag.Filter == "all"? "active": "")" asp-controller="Incidents" asp-action="FilterAll">All Incidents</a>
     </li>
     <li class="nav-item">
-        <a id="unassigned" class="nav-link" asp-controller="Incidents" asp-action="FilterUnassigned">Unassigned Incidents</a>   @*//tech id=null*@
+        <a id="unassigned" class="nav-link @(ViewBag.Filter == "unassigned"? "active": "")" asp-controller="Incidents" asp-action="FilterUnassigned">Unassigned Incidents</a>   @*//tech id=null*@
     </li>
     <li class="nav-item">
-        <a id="open" class="nav-link" asp-controller="Incidents" asp-action="FilterOpen">Open Incidents</a>   @*//dateclose =null*@
+        <a id="open" class="nav-link @(ViewBag.Filter == "open"? "active": "")" asp-controller="Incidents" asp-action="FilterOpen">Open Incidents</a>   @*//dateclose =null*@
     </li>
 </ul>
 <br />
@@ -76,7 +78,7 @@
     <a class="btn btn-primary btn-large" asp-action="Create">Add Incident</a>
 </p>
 
-<script>
+@*<script>
     $(document).ready(function () {
         //alert("okay")
         $("#all").click(function () {
@@ -99,4 +101,4 @@
 
 
     });
-</script>
+</script>*@

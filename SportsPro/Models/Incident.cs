@@ -24,8 +24,10 @@ namespace SportsPro.Models
 		[Required]
 		public string Description { get; set; }
 
+		[DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = false)]
 		public DateTime DateOpened { get; set; } = DateTime.Now;
 
+		[DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = false)]
 		public DateTime? DateClosed { get; set; } = null;
 	}
 }

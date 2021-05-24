@@ -3,36 +3,37 @@ using System.Collections.Generic;
 
 namespace SportsPro.Models
 {
-    public class Customer
+    public partial class Customer
     {
-		public int CustomerID { get; set; }
+        public Customer()
+        {
+            Incidents = new HashSet<Incident>();
+        }
 
-		[Required]
-		public string FirstName { get; set; }
+        public int CustomerID { get; set; }
+        [Required, MaxLength(50), Display(Name = "First Name")]
+        public string FirstName { get; set; }
+        [Required, MaxLength(50), Display(Name = "Last Name")]
+        public string LastName { get; set; }
+        [Required, MaxLength(50),]
+        public string Address { get; set; }
+        [Required, MaxLength(50)]
+        public string City { get; set; }
+        [Required, MaxLength(50)]
+        public string State { get; set; }
+        [Required, MaxLength(20), Display(Name = "Postal Code")]
+        public string PostalCode { get; set; }
+        [Required, Display(Name = "Country")]
+        public string CountryID { get; set; }
 
-		[Required]
-		public string LastName { get; set; }
+        [MaxLength(15), RegularExpression(@"\(?\d{3}\)?-? *\d{3}-? *-?\d{4}",
+         ErrorMessage = "Phone Number must be in the (999)999-9999 format")]
+        public string Phone { get; set; }
+        [MaxLength(50), EmailAddress]
+        public string Email { get; set; }
+        public string FullName => FirstName + " " + LastName; // read only property
 
-		[Required]
-		public string Address { get; set; }
-
-		[Required]
-		public string City { get; set; }
-
-		[Required]
-		public string State { get; set; }
-
-		[Required]
-		public string PostalCode { get; set; }
-
-		[Required]
-		public string CountryID { get; set; }
-		public Country Country { get; set; }
-
-		public string Phone { get; set; }
-
-		public string Email { get; set; }
-
-		public string FullName => FirstName + " " + LastName;   // read-only property
-	}
+        public virtual Country Country { get; set; }
+        public virtual ICollection<Incident> Incidents { get; set; }
+    }
 }

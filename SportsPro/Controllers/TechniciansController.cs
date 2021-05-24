@@ -61,6 +61,8 @@ namespace SportsPro.Controllers
             {
                 _context.Add(technician);
                 await _context.SaveChangesAsync();
+                //create a custom message to display at top of the page
+                TempData["message"] = $"Technician {technician.Name} added to the database.";
                 return RedirectToAction(nameof(List));
             }
             return View(technician);
@@ -112,6 +114,8 @@ namespace SportsPro.Controllers
                         throw;
                     }
                 }
+                //create a custom message to display at top of the page
+                TempData["message"] = $"Technician {technician.Name} data updated in the database.";
                 return RedirectToAction(nameof(List));
             }
             return View(technician);
@@ -143,6 +147,8 @@ namespace SportsPro.Controllers
             var technician = await _context.Technicians.FindAsync(id);
             _context.Technicians.Remove(technician);
             await _context.SaveChangesAsync();
+            //create a custom message to display at top of the page
+            TempData["message"] = $"Technician {technician.Name} was deleted from the database.";
             return RedirectToAction(nameof(List));
         }
 

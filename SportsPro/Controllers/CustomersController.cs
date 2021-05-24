@@ -66,6 +66,8 @@ namespace SportsPro.Controllers
                 return RedirectToAction(nameof(List));
             }
             ViewData["CountryID"] = new SelectList(_context.Countries, "CountryID", "CountryID", customer.CountryID);
+            //create a custom message to display at top of the page
+            TempData["message"] = $"Customer {customer.Email} was created in the database.";
             return View(customer);
         }
 
@@ -83,6 +85,8 @@ namespace SportsPro.Controllers
                 return NotFound();
             }
             ViewData["CountryID"] = new SelectList(_context.Countries, "CountryID", "CountryID", customer.CountryID);
+            //create a custom message to display at top of the page
+            TempData["message"] = $"Customer {customer.Email} was updated in the database.";
             return View(customer);
         }
 
@@ -116,6 +120,8 @@ namespace SportsPro.Controllers
                         throw;
                     }
                 }
+                //create a custom message to display at top of the page
+                TempData["message"] = $"Customer {customer.Email} was updated in the database.";
                 return RedirectToAction(nameof(List));
             }
             ViewData["CountryID"] = new SelectList(_context.Countries, "CountryID", "CountryID", customer.CountryID);
@@ -137,7 +143,8 @@ namespace SportsPro.Controllers
             {
                 return NotFound();
             }
-
+            //create a custom message to display at top of the page
+            TempData["message"] = $"Customer {customer.Email} was deleted from in the database.";
             return View(customer);
         }
 
@@ -149,6 +156,8 @@ namespace SportsPro.Controllers
             var customer = await _context.Customers.FindAsync(id);
             _context.Customers.Remove(customer);
             await _context.SaveChangesAsync();
+            //create a custom message to display at top of the page
+            TempData["message"] = $"Customer {customer.Email} was deleted from in the database.";
             return RedirectToAction(nameof(List));
         }
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Masha\\Source\\Repos\\SportsProWS5\\SportsPro\\SportsPro.csproj": {}
+    "e:\\Users\\Masha\\Documents\\dotNet\\Workshop 5\\SportsPro\\SportsPro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Masha\\Source\\Repos\\SportsProWS5\\SportsPro\\SportsPro.csproj": {
+    "e:\\Users\\Masha\\Documents\\dotNet\\Workshop 5\\SportsPro\\SportsPro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Masha\\Source\\Repos\\SportsProWS5\\SportsPro\\SportsPro.csproj",
+        "projectUniqueName": "e:\\Users\\Masha\\Documents\\dotNet\\Workshop 5\\SportsPro\\SportsPro.csproj",
         "projectName": "SportsPro",
-        "projectPath": "C:\\Users\\Masha\\Source\\Repos\\SportsProWS5\\SportsPro\\SportsPro.csproj",
+        "projectPath": "e:\\Users\\Masha\\Documents\\dotNet\\Workshop 5\\SportsPro\\SportsPro.csproj",
         "packagesPath": "C:\\Users\\Masha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Masha\\Source\\Repos\\SportsProWS5\\SportsPro\\obj\\",
+        "outputPath": "e:\\Users\\Masha\\Documents\\dotNet\\Workshop 5\\SportsPro\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Masha\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ld2qjrzgTGUI7LDtE2rhqX42HvgAiVQA8BEZP2WZDlCb/3BgP8P+T4hyGW44JUrD7zwNl9wwRM491PhQsKEzsg==",
+  "dgSpecHash": "u1+G80RjuPxwHkIkR8bqBLCJxLDrj12uNWkz8yn7H0FCsSwOpEINun3YyoYWjSYxsVIlGBBWSkP0ECf7X1xG+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Masha\\Source\\Repos\\SportsProWS5\\SportsPro\\SportsPro.csproj",
+  "projectFilePath": "e:\\Users\\Masha\\Documents\\dotNet\\Workshop 5\\SportsPro\\SportsPro.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Masha\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Masha\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

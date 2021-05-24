@@ -488,3 +488,5 @@ e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Raz
 e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Edit.cshtml.g.cs
 e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Customers\List.cshtml.g.cs
 >>>>>>> 3f05ece3a1b96d629ec2354484e26e0dcdd4a095
+e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\User\AccessDenied.cshtml.g.cs
+e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\User\Login.cshtml.g.cs

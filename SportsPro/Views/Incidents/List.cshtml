@@ -1,0 +1,102 @@
+﻿@model IEnumerable<SportsPro.Models.Incident>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<br />
+
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a id="all" class="nav-link" asp-controller="Incidents" asp-action="FilterAll">All Incidents</a>
+    </li>
+    <li class="nav-item">
+        <a id="unassigned" class="nav-link" asp-controller="Incidents" asp-action="FilterUnassigned">Unassigned Incidents</a>   @*//tech id=null*@
+    </li>
+    <li class="nav-item">
+        <a id="open" class="nav-link" asp-controller="Incidents" asp-action="FilterOpen">Open Incidents</a>   @*//dateclose =null*@
+    </li>
+</ul>
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Customer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Product)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.DateOpened)
+            </th>
+
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customer.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Product.Name)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOpened)
+                </td>
+
+                <td>
+                    <a class="btn btn-primary btn-large" asp-action="Edit" asp-route-id="@item.IncidentID">Edit</a>
+
+                </td>
+                <td>
+
+                    <a class="btn btn-primary btn-large" asp-action="Delete" asp-route-id="@item.IncidentID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    <a class="btn btn-primary btn-large" asp-action="Create">Add Incident</a>
+</p>
+
+<script>
+    $(document).ready(function () {
+        //alert("okay")
+        $("#all").click(function () {
+            $("#all").addClass("active");
+            $("#open").removeClass("active");
+            $("#unassigned").removeClass("active");
+        });
+
+        $("#open").click(function () {
+            $("#all").removeClass("active");
+            $("#open").addClass("active");
+            $("#unassigned").removeClass("active");
+        });
+
+        $("#unassigned").click(function () {
+            $("#all").removeClass("active");
+            $("#open").removeClass("active");
+            $("#unassigned").addClass("active");
+        });
+
+
+    });
+</script>

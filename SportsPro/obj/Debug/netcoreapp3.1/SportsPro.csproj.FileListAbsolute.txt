@@ -114,7 +114,6 @@ C:\Users\Hao Fei\source\repos\ASPdotNET\Workshop5\PROJ009_Workshop5_SportsPro St
 C:\Users\Hao Fei\source\repos\ASPdotNET\Workshop5\PROJ009_Workshop5_SportsPro Start\SportsPro\SportsPro\obj\Debug\netcoreapp3.1\SportsPro.TagHelpers.output.cache
 C:\Users\Hao Fei\source\repos\ASPdotNET\Workshop5\PROJ009_Workshop5_SportsPro Start\SportsPro\SportsPro\obj\Debug\netcoreapp3.1\SportsPro.RazorCoreGenerate.cache
 C:\Users\Hao Fei\source\repos\ASPdotNET\Workshop5\PROJ009_Workshop5_SportsPro Start\SportsPro\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
-C:\Users\Hao Fei\source\repos\ASPdotNET\Workshop5\PROJ009_Workshop5_SportsPro Start\SportsPro\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Hao Fei\source\repos\ASPdotNET\Workshop5\PROJ009_Workshop5_SportsPro Start\SportsPro\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Hao Fei\source\repos\ASPdotNET\Workshop5\PROJ009_Workshop5_SportsPro Start\SportsPro\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Hao Fei\source\repos\ASPdotNET\Workshop5\PROJ009_Workshop5_SportsPro Start\SportsPro\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
@@ -151,3 +150,6 @@ C:\Users\Hao Fei\source\repos\ASPdotNET\Workshop5\PROJ009_Workshop5_SportsPro St
 C:\Users\Hao Fei\source\repos\ASPdotNET\Workshop5\PROJ009_Workshop5_SportsPro Start\SportsPro\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Products\Edit.cshtml.g.cs
 C:\Users\Hao Fei\source\repos\ASPdotNET\Workshop5\PROJ009_Workshop5_SportsPro Start\SportsPro\SportsPro\obj\Debug\netcoreapp3.1\SportsPro.csprojAssemblyReference.cache
 C:\Users\Hao Fei\source\repos\ASPdotNET\Workshop5\PROJ009_Workshop5_SportsPro Start\SportsPro\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Products\List.cshtml.g.cs
+C:\Users\Hao Fei\source\repos\ASPdotNET\Workshop5\PROJ009_Workshop5_SportsPro Start\SportsPro\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Home\List.cshtml.g.cs
+C:\Users\Hao Fei\source\repos\ASPdotNET\Workshop5\PROJ009_Workshop5_SportsPro Start\SportsPro\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\User\Login.cshtml.g.cs
+C:\Users\Hao Fei\source\repos\ASPdotNET\Workshop5\PROJ009_Workshop5_SportsPro Start\SportsPro\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\User\AccessDenied.cshtml.g.cs

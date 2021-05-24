@@ -6,6 +6,7 @@ using Microsoft.Extensions.Hosting;
 
 using Microsoft.EntityFrameworkCore;
 using SportsPro.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace SportsPro
 {
@@ -31,6 +32,13 @@ namespace SportsPro
                 options.LowercaseUrls = true;
                 options.AppendTrailingSlash = true;
             });
+
+            //adding the cookies authentication service
+            services.
+                AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).
+                AddCookie(opt => opt.LoginPath = "/Account/Login");
+
+            services.AddScoped<IUserManager, UserManager>();
         }
 
         // Use this method to configure the HTTP request pipeline.
@@ -50,14 +58,14 @@ namespace SportsPro
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();// use before authorization
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=List}/{id?}");
             });
         }
     }

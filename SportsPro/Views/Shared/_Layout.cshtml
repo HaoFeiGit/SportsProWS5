@@ -38,14 +38,19 @@
             </nav>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-5">
-            @RenderBody()
-        </main>
-    </div>
+    <!--this displays the custom message at top of the page-->
+    @if (TempData.Keys.Contains("message"))
+    {<h4 class="bg-info text-center text-white p-2">
+            @TempData["message"]
+        </h4>}
+        <div class="container">
+            <main role="main" class="pb-5">
+                @RenderBody()
+            </main>
+        </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">&copy; @DateTime.Now.Year - SportsPro</div>
-    </footer>
-</body>
+        <footer class="border-top footer text-muted">
+            <div class="container">&copy; @DateTime.Now.Year - SportsPro</div>
+        </footer>
+    </body>
 </html>

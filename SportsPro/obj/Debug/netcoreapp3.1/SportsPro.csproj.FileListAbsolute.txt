@@ -287,7 +287,6 @@ e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Spo
 e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\SportsPro.TagHelpers.output.cache
 e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\SportsPro.RazorCoreGenerate.cache
 e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
-e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Products\Create.cshtml.g.cs
 e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Products\Delete.cshtml.g.cs
 e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Products\Details.cshtml.g.cs
@@ -472,3 +471,15 @@ D:\ASP Net\Project\Version2\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Incide
 D:\ASP Net\Project\Version2\SportsPro\obj\Debug\netcoreapp3.1\SportsPro.csprojAssemblyReference.cache
 D:\ASP Net\Project\Version2\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Incidents\List.cshtml.g.cs
 D:\ASP Net\Project\Version2\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Home\List.cshtml.g.cs
+e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Home\List.cshtml.g.cs
+e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Incidents\Create.cshtml.g.cs
+e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Incidents\Delete.cshtml.g.cs
+e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Incidents\Details.cshtml.g.cs
+e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Incidents\Edit.cshtml.g.cs
+e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Incidents\List.cshtml.g.cs
+e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Error.cshtml.g.cs
+e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Create.cshtml.g.cs
+e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Delete.cshtml.g.cs
+e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Details.cshtml.g.cs
+e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Edit.cshtml.g.cs
+e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Customers\List.cshtml.g.cs

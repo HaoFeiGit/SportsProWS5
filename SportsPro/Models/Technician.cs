@@ -14,6 +14,8 @@ namespace SportsPro.Models
 		public string Email { get; set; }
 
 		[Required]
+		[MaxLength(15), RegularExpression(@"\(?\d{3}\)?-? *\d{3}-? *-?\d{4}",
+		 ErrorMessage = "Phone Number must be in the (999)999-9999 format")]
 		public string Phone { get; set; }
 	}
 }

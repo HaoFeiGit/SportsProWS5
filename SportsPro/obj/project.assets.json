@@ -8503,24 +8503,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jimmy\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Masha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ASP Net\\Project\\Version2\\SportsPro\\SportsPro.csproj",
+      "projectUniqueName": "e:\\Users\\Masha\\Documents\\dotNet\\Workshop 5\\SportsPro\\SportsPro.csproj",
       "projectName": "SportsPro",
-      "projectPath": "D:\\ASP Net\\Project\\Version2\\SportsPro\\SportsPro.csproj",
-      "packagesPath": "C:\\Users\\jimmy\\.nuget\\packages\\",
-      "outputPath": "D:\\ASP Net\\Project\\Version2\\SportsPro\\obj\\",
+      "projectPath": "e:\\Users\\Masha\\Documents\\dotNet\\Workshop 5\\SportsPro\\SportsPro.csproj",
+      "packagesPath": "C:\\Users\\Masha\\.nuget\\packages\\",
+      "outputPath": "e:\\Users\\Masha\\Documents\\dotNet\\Workshop 5\\SportsPro\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\jimmy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Masha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8583,7 +8578,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -20,6 +20,7 @@ namespace SportsPro.Controllers
         }
 
         // GET: Incidents
+        [Route("/incidents")]
         public async Task<IActionResult> List()
         {
             string Filter = HttpContext.Session.GetString("Filter");

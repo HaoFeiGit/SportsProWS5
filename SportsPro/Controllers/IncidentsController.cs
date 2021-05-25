@@ -34,7 +34,7 @@ namespace SportsPro.Controllers
             //incident = incident.OrderBy(i.)
             if (Filter == "unassigned")
             {
-                sportsProContext= sportsProContext.Where(i => i.TechnicianID == null);
+                sportsProContext = sportsProContext.Where(i => i.TechnicianID == null);
             }
             if (Filter == "open")
             {
@@ -44,7 +44,11 @@ namespace SportsPro.Controllers
 
             return View(await sportsProContext.ToListAsync());
         }
-
+        //list incidents by technician
+        public async Task<IActionResult> ListByTech() {
+            IQueryable<Incident> sportsProContext = _context.Incidents.Include(i => i.Customer).Include(i => i.Product).Include(i => i.Technician);
+            return View(await sportsProContext.ToListAsync());
+}
         // GET: Incidents/Details/5
         public async Task<IActionResult> Details(int? id)
         {

@@ -9,18 +9,15 @@ using System.Threading.Tasks;
 
 namespace SportsPro.Controllers
 {
-    public class UserController : Controller
+    public class AccountController : Controller
     {
+        private readonly SportsProContext _context;
 
-
-        IUserManager _manager;
-
-        public UserController(IUserManager manager)
+        public AccountController(SportsProContext context)
         {
-            _manager = manager;
+            _context = context;
         }
 
-        // Route:   /User/Login
         public IActionResult Login(string returnUrl = null)
         {
             if (returnUrl != null)
@@ -32,7 +29,7 @@ namespace SportsPro.Controllers
         public async Task<IActionResult> LoginAsync(User user)
         {
             //authenticate using the manager
-            var usr = _manager.Authenticate(user.Username, user.Password);
+            var usr = _context.Users.SingleOrDefault(u => u.Username == user.Username && user.Password == user.Password);
             //return now if user object returned is null
             if (user == null) return View();
             //otherwise set up claims--one for each fact about the user
@@ -49,7 +46,7 @@ namespace SportsPro.Controllers
                                           new ClaimsPrincipal(claimsIdentity));
             //handle the return url value from TempData if it exists or not
             if (TempData["ReturnUrl"] == null)
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("List", "Home");
             else
                 return Redirect(TempData["ReturnUrl"].ToString());
         }
@@ -57,7 +54,7 @@ namespace SportsPro.Controllers
         public async Task<IActionResult> LogoutAsync()
         {
             await HttpContext.SignOutAsync("Cookies");
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("List", "Home");
         }
 
         public IActionResult AccessDenied()

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "e:\\Users\\Masha\\Documents\\dotNet\\Workshop 5\\SportsPro\\SportsPro.csproj": {}
+    "C:\\Users\\Hao Fei\\source\\repos\\ASPdotNET\\WS51121am\\SportsPro\\SportsPro.csproj": {}
   },
   "projects": {
-    "e:\\Users\\Masha\\Documents\\dotNet\\Workshop 5\\SportsPro\\SportsPro.csproj": {
+    "C:\\Users\\Hao Fei\\source\\repos\\ASPdotNET\\WS51121am\\SportsPro\\SportsPro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\Users\\Masha\\Documents\\dotNet\\Workshop 5\\SportsPro\\SportsPro.csproj",
+        "projectUniqueName": "C:\\Users\\Hao Fei\\source\\repos\\ASPdotNET\\WS51121am\\SportsPro\\SportsPro.csproj",
         "projectName": "SportsPro",
-        "projectPath": "e:\\Users\\Masha\\Documents\\dotNet\\Workshop 5\\SportsPro\\SportsPro.csproj",
-        "packagesPath": "C:\\Users\\Masha\\.nuget\\packages\\",
-        "outputPath": "e:\\Users\\Masha\\Documents\\dotNet\\Workshop 5\\SportsPro\\obj\\",
+        "projectPath": "C:\\Users\\Hao Fei\\source\\repos\\ASPdotNET\\WS51121am\\SportsPro\\SportsPro.csproj",
+        "packagesPath": "C:\\Users\\Hao Fei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hao Fei\\source\\repos\\ASPdotNET\\WS51121am\\SportsPro\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Masha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hao Fei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://packagesource": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -77,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

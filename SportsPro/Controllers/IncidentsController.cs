@@ -10,6 +10,7 @@ using SportsPro.Models;
 
 namespace SportsPro.Controllers
 {
+    
     public class IncidentsController : Controller
     {
         private readonly SportsProContext _context;
@@ -20,7 +21,7 @@ namespace SportsPro.Controllers
         }
 
         // GET: Incidents
-        [Route("/incidents")]
+        [Route("/Incidents")]
         public async Task<IActionResult> List()
         {
             //get status of filter

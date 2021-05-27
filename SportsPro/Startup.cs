@@ -7,6 +7,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using SportsPro.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
+using JavaScriptEngineSwitcher.V8;
+using JavaScriptEngineSwitcher.Extensions.MsDependencyInjection;
+using React.AspNet;
 
 namespace SportsPro
 {
@@ -22,6 +26,20 @@ namespace SportsPro
         // Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //react dependency -----
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddReact();
+
+            // Make sure a JS engine is registered, or you will get an error!
+            services.AddJsEngineSwitcher(options => options.DefaultEngineName = V8JsEngine.EngineName)
+              .AddV8();
+            //react dependency -----
+
+
+
+
+
             services.AddSession();  //use sessions
             services.AddControllersWithViews();
 
@@ -56,6 +74,16 @@ namespace SportsPro
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
+
+            //react dependency -----
+            app.UseReact(config =>
+            {
+
+            });
+
+
+
+
             app.UseStaticFiles();
 
             app.UseRouting();

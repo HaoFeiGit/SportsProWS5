@@ -11,6 +11,21 @@
           "lib/netstandard2.0/AdvancedStringBuilder.dll": {}
         }
       },
+<<<<<<< HEAD
+=======
+      "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64/3.9.1": {
+        "type": "package",
+        "build": {
+          "build/JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/ChakraCore.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
       "JavaScriptEngineSwitcher.Core/3.3.0": {
         "type": "package",
         "dependencies": {
@@ -41,12 +56,20 @@
           "lib/netstandard2.0/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll": {}
         }
       },
+<<<<<<< HEAD
       "JavaScriptEngineSwitcher.V8/3.12.3": {
+=======
+      "JavaScriptEngineSwitcher.V8/3.12.1": {
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
         "type": "package",
         "dependencies": {
           "AdvancedStringBuilder": "0.1.0",
           "JavaScriptEngineSwitcher.Core": "3.3.0",
+<<<<<<< HEAD
           "Microsoft.ClearScript.V8": "7.1.3"
+=======
+          "Microsoft.ClearScript.V8": "7.1.2"
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
         },
         "compile": {
           "lib/netcoreapp3.1/JavaScriptEngineSwitcher.V8.dll": {}
@@ -60,6 +83,15 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
+      "JavaScriptEngineSwitcher.V8.Native.win-x64/3.12.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ClearScript.V8.Native.win-x64": "7.1.2"
+        }
+      },
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
       "JSPool/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -136,7 +168,11 @@
           "lib/netcoreapp2.1/Microsoft.Bcl.HashCode.dll": {}
         }
       },
+<<<<<<< HEAD
       "Microsoft.ClearScript.Core/7.1.3": {
+=======
+      "Microsoft.ClearScript.Core/7.1.2": {
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Registry": "5.0.0"
@@ -148,10 +184,17 @@
           "lib/netcoreapp3.1/ClearScript.Core.dll": {}
         }
       },
+<<<<<<< HEAD
       "Microsoft.ClearScript.V8/7.1.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.ClearScript.Core": "7.1.3"
+=======
+      "Microsoft.ClearScript.V8/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ClearScript.Core": "7.1.2"
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
         },
         "compile": {
           "lib/netcoreapp3.1/ClearScript.V8.dll": {}
@@ -160,6 +203,21 @@
           "lib/netcoreapp3.1/ClearScript.V8.dll": {}
         }
       },
+<<<<<<< HEAD
+=======
+      "Microsoft.ClearScript.V8.Native.win-x64/7.1.2": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.ClearScript.V8.Native.win-x64.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/ClearScriptV8.win-x64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
       "Microsoft.CodeAnalysis.Analyzers/2.9.4": {
         "type": "package",
         "build": {
@@ -2803,6 +2861,29 @@
         "lib/netstandard2.0/AdvancedStringBuilder.xml"
       ]
     },
+<<<<<<< HEAD
+=======
+    "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64/3.9.1": {
+      "sha512": "WxFAV0TqfFFHYX/Fy4IzXVwZ/foaJBV3OTzkGgfyCZYOgnq+yGh9EUfrDz/TE0mmhXTDRdyNtQ+LVepOhWvzUg==",
+      "type": "package",
+      "path": "javascriptengineswitcher.chakracore.native.win-x64/3.9.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.props",
+        "chakra-core-license.txt",
+        "icon.png",
+        "javascriptengineswitcher.chakracore.native.win-x64.3.9.1.nupkg.sha512",
+        "javascriptengineswitcher.chakracore.native.win-x64.nuspec",
+        "readme.txt",
+        "runtimes/win-x64/native/ChakraCore.dll",
+        "tools/Install.ps1",
+        "tools/Uninstall.ps1"
+      ]
+    },
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
     "JavaScriptEngineSwitcher.Core/3.3.0": {
       "sha512": "aY5dOsBsB7MO2twVRlRcvHBFdkXptIwjSobjPis+DiUi5Cq2YU6M8ICHzaQ1ZXHl7VyWrBMV7cTn98ZrI5ZMHQ==",
       "type": "package",
@@ -2850,10 +2931,17 @@
         "readme.txt"
       ]
     },
+<<<<<<< HEAD
     "JavaScriptEngineSwitcher.V8/3.12.3": {
       "sha512": "Is0pnrgwID5udd0CwMByibCUtM8rzVL7BAc3GPZorOb/njT4OzJaKfR+68nsuR7xa4sPdonKSLbj1ZFSt6LD8A==",
       "type": "package",
       "path": "javascriptengineswitcher.v8/3.12.3",
+=======
+    "JavaScriptEngineSwitcher.V8/3.12.1": {
+      "sha512": "A0nCC8xbkpl3VDDiV8Tdf1SgnjVjc9XMgcIU8KtXxwcmdRQx56aR3OhloMK9lPaQ+jI/WpQ/NyIN7lFYbUye5g==",
+      "type": "package",
+      "path": "javascriptengineswitcher.v8/3.12.1",
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2861,7 +2949,11 @@
         "advanced-string-builder-license.txt",
         "clearscript-license.txt",
         "icon.png",
+<<<<<<< HEAD
         "javascriptengineswitcher.v8.3.12.3.nupkg.sha512",
+=======
+        "javascriptengineswitcher.v8.3.12.1.nupkg.sha512",
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
         "javascriptengineswitcher.v8.nuspec",
         "lib/net45/JavaScriptEngineSwitcher.V8.dll",
         "lib/net45/JavaScriptEngineSwitcher.V8.xml",
@@ -2882,6 +2974,25 @@
         "v8-license.txt"
       ]
     },
+<<<<<<< HEAD
+=======
+    "JavaScriptEngineSwitcher.V8.Native.win-x64/3.12.1": {
+      "sha512": "/NGcz1ZIDcnKEmhvOB6YX5XmiyxYDukdiimlBUVXdwCe2WpLzu7ROvfi63+u9pAW33KiszxVF3UKTTCxuR8lTA==",
+      "type": "package",
+      "path": "javascriptengineswitcher.v8.native.win-x64/3.12.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "clearscript-license.txt",
+        "icon.png",
+        "javascriptengineswitcher.v8.native.win-x64.3.12.1.nupkg.sha512",
+        "javascriptengineswitcher.v8.native.win-x64.nuspec",
+        "readme.txt",
+        "v8-license.txt"
+      ]
+    },
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
     "JSPool/4.0.0": {
       "sha512": "r+AeQ9R50HxU+HLqASYvZz6Mvg7RmZwEnCVhQ+xGYVexFjYYqlkW6by9HaflGaHjy+/28YLbb3qxDLRJ3AbZGQ==",
       "type": "package",
@@ -3007,10 +3118,17 @@
         "version.txt"
       ]
     },
+<<<<<<< HEAD
     "Microsoft.ClearScript.Core/7.1.3": {
       "sha512": "+3GdKwrthg/Tvhz5OXVjlUEQt4jMzHGRVQ4FFzP60lyOMvfHvY1OpA1MIPLMBUCHIfTwx7IOMjqUszd+9bMI5Q==",
       "type": "package",
       "path": "microsoft.clearscript.core/7.1.3",
+=======
+    "Microsoft.ClearScript.Core/7.1.2": {
+      "sha512": "0CHtJFZGdhLAg49LFi+qluVHMH4hnJ7ENRgeVTqNzw5xz4PE+z7soJ47yHLf2mrarm0aBJQfWk74VQEvqlIJFQ==",
+      "type": "package",
+      "path": "microsoft.clearscript.core/7.1.2",
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3033,6 +3151,7 @@
         "licenses/V8/LICENSE.fdlibm",
         "licenses/V8/LICENSE.strongtalk",
         "licenses/V8/LICENSE.v8",
+<<<<<<< HEAD
         "microsoft.clearscript.core.7.1.3.nupkg.sha512",
         "microsoft.clearscript.core.nuspec"
       ]
@@ -3041,6 +3160,16 @@
       "sha512": "C+ANrZLSIW8ueXTZ/ju8w3hvjoKYFXYoI0dcWTJga+MsdHtxIQCb0t1alkbHKNIMvXsbx/eRHEeKkChixVVkGQ==",
       "type": "package",
       "path": "microsoft.clearscript.v8/7.1.3",
+=======
+        "microsoft.clearscript.core.7.1.2.nupkg.sha512",
+        "microsoft.clearscript.core.nuspec"
+      ]
+    },
+    "Microsoft.ClearScript.V8/7.1.2": {
+      "sha512": "FC0vAAP7leZwhRwSvfbQfVb7UNVfiiEIRYUAtTZhWskib/G1MdaD8kurIvfTv8wJMUrBVQFJwp+0TZxhyRQJjg==",
+      "type": "package",
+      "path": "microsoft.clearscript.v8/7.1.2",
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3063,10 +3192,40 @@
         "licenses/V8/LICENSE.fdlibm",
         "licenses/V8/LICENSE.strongtalk",
         "licenses/V8/LICENSE.v8",
+<<<<<<< HEAD
         "microsoft.clearscript.v8.7.1.3.nupkg.sha512",
         "microsoft.clearscript.v8.nuspec"
       ]
     },
+=======
+        "microsoft.clearscript.v8.7.1.2.nupkg.sha512",
+        "microsoft.clearscript.v8.nuspec"
+      ]
+    },
+    "Microsoft.ClearScript.V8.Native.win-x64/7.1.2": {
+      "sha512": "LfiKhKcSHenXoZbsHOvp2MsujVMrJ87FbsPf1SJyqZk8ModK0zz1yq5xcxRnAQY4f8sMKj3dnb97nE5zzOXCjA==",
+      "type": "package",
+      "path": "microsoft.clearscript.v8.native.win-x64/7.1.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "build/Microsoft.ClearScript.V8.Native.win-x64.props",
+        "images/ClearScript.png",
+        "licenses/ClearScript/License.txt",
+        "licenses/V8/LICENSE",
+        "licenses/V8/LICENSE.fdlibm",
+        "licenses/V8/LICENSE.strongtalk",
+        "licenses/V8/LICENSE.v8",
+        "microsoft.clearscript.v8.native.win-x64.7.1.2.nupkg.sha512",
+        "microsoft.clearscript.v8.native.win-x64.nuspec",
+        "runtimes/win-x64/native/ClearScriptV8.win-x64.dll",
+        "tools/Install.ps1",
+        "tools/Uninstall.ps1"
+      ]
+    },
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
     "Microsoft.CodeAnalysis.Analyzers/2.9.4": {
       "sha512": "alIJhS0VUg/7x5AsHEoovh/wRZ0RfCSS7k5pDSqpRLTyuMTtRgj6OJJPRApRhJHOGYYsLakf1hKeXFoDwKwNkg==",
       "type": "package",
@@ -9047,8 +9206,15 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+<<<<<<< HEAD
       "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection >= 3.3.0",
       "JavaScriptEngineSwitcher.V8 >= 3.12.3",
+=======
+      "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64 >= 3.9.1",
+      "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection >= 3.3.0",
+      "JavaScriptEngineSwitcher.V8 >= 3.12.1",
+      "JavaScriptEngineSwitcher.V8.Native.win-x64 >= 3.12.1",
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.15",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.15",
       "Microsoft.Extensions.Logging.Debug >= 3.1.0",
@@ -9057,13 +9223,19 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\vasya\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+=======
+    "C:\\Users\\jimmy\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\repos\\mainSP\\SportsPro\\SportsPro.csproj",
       "projectName": "SportsPro",
       "projectPath": "D:\\repos\\mainSP\\SportsPro\\SportsPro.csproj",
@@ -9079,6 +9251,21 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+=======
+      "projectUniqueName": "D:\\ASP Net\\Project\\Version2\\SportsPro\\SportsPro.csproj",
+      "projectName": "SportsPro",
+      "projectPath": "D:\\ASP Net\\Project\\Version2\\SportsPro\\SportsPro.csproj",
+      "packagesPath": "C:\\Users\\jimmy\\.nuget\\packages\\",
+      "outputPath": "D:\\ASP Net\\Project\\Version2\\SportsPro\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\jimmy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -9103,13 +9290,28 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+<<<<<<< HEAD
+=======
+          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64": {
+            "target": "Package",
+            "version": "[3.9.1, )"
+          },
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
           "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection": {
             "target": "Package",
             "version": "[3.3.0, )"
           },
           "JavaScriptEngineSwitcher.V8": {
             "target": "Package",
+<<<<<<< HEAD
             "version": "[3.12.3, )"
+=======
+            "version": "[3.12.1, )"
+          },
+          "JavaScriptEngineSwitcher.V8.Native.win-x64": {
+            "target": "Package",
+            "version": "[3.12.1, )"
+>>>>>>> 7b7c3baa7e00796d95ead86e7150cafa2ae143c4
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
@@ -9152,7 +9354,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

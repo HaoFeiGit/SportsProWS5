@@ -1,0 +1,49 @@
+﻿@model SportsPro.Models.Incident
+
+@{
+    ViewData["Title"] = "ListByTech";
+}
+
+<h1>Technician</h1>
+
+@if (Model == null)
+{
+    <div class="row">
+        <div class="col-md-4">
+            <form method="post" asp-action="ListByTech">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <select name="id" class="form-control" asp-items="ViewBag.TechID"></select>
+                    <span asp-validation-for="TechnicianID" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Select" class="btn btn-primary" />
+
+                </div>
+            </form>
+        </div>
+    </div>
+}
+else
+{<h1>@ViewBag.TechnicianID selected</h1>}
+<!--
+else
+{<h1><div class="form-group">
+    <label asp-for="TechnicianID">Technician</label> <select asp-for="TechnicianID" asp-items="(new SelectList(ViewBag.Categories, "TechnicianID", "Name", Model.TechnicianID.ToString()))"
+                                                         class="form-control"></select>
+</div></h1>}
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Details">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input type="hidden" asp-for="IncidentID" />
+                <select asp-for="TechnicianID" class="form-control" asp-items="ViewBag.TechnicianID"></select>
+                <span asp-validation-for="TechnicianID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Select" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>-->

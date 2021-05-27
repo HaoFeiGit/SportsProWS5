@@ -605,52 +605,6 @@ namespace SportsPro.Migrations
                         });
                 });
 
-            modelBuilder.Entity("SportsPro.Models.User", b =>
-                {
-                    b.Property<int>("UserId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Role")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("UserId");
-
-                    b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = 1,
-                            FullName = "John Doe",
-                            Password = "P@ssw0rd",
-                            Role = "Admin",
-                            Username = "admin"
-                        },
-                        new
-                        {
-                            UserId = 2,
-                            FullName = "John Doe",
-                            Password = "P@ssw0rd",
-                            Role = "Technician",
-                            Username = "tech"
-                        });
-                });
-
             modelBuilder.Entity("SportsPro.Models.Customer", b =>
                 {
                     b.HasOne("SportsPro.Models.Country", "Country")

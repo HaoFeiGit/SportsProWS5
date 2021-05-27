@@ -1,0 +1,16 @@
+﻿const About = () => {
+
+    return (
+
+        <div className="jumbotron bg-secondary mt-4">
+            <h1 class="text-light">About</h1>
+            <p class="text-light">SportsPro Technical Support constantly strives to provide the highest level of technical support for all products in the SportsPro family.</p>
+        </div>
+
+
+
+    )
+
+}
+
+export default About

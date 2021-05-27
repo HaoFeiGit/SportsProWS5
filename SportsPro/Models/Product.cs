@@ -17,8 +17,9 @@ namespace SportsPro.Models
 
 		[Range(0, 1000000)]
 		[Column(TypeName = "decimal(8,2)")]
+		[DisplayFormat(DataFormatString = "{0:C}", ApplyFormatInEditMode = true)]
 		public decimal YearlyPrice { get; set; }
-
+		[DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = false)]
 		public DateTime ReleaseDate { get; set; } = DateTime.Now;
 	}
 }

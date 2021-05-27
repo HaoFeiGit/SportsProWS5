@@ -33,7 +33,9 @@
                     <a class="nav-item nav-link active" asp-controller="Registrations" asp-action="GetCustomer">Registrations</a>
                 </div>
                 <div class="navbar-nav navbar-right">
+                    <partial name="_LoginPartial" />
                     <a class="nav-item nav-link active" asp-controller="Home" asp-action="About">About</a>
+                    <a class="nav-item nav-link active" asp-controller="Users" asp-action="List">Users</a>
                 </div>
             </nav>
         </nav>

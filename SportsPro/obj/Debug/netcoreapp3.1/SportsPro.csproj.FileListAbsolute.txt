@@ -507,3 +507,5 @@ e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Spo
 e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\SportsPro.dll
 e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\SportsPro.pdb
 e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\SportsPro.genruntimeconfig.cache
+e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Incidents\ListByTech.cshtml.g.cs
+e:\Users\Masha\Documents\dotNet\Workshop 5\SportsPro\obj\Debug\netcoreapp3.1\Razor\Views\Incidents\ViewByTechnician.cshtml.g.cs

@@ -44,11 +44,20 @@ namespace SportsPro.Controllers
 
             return View(await sportsProContext.ToListAsync());
         }
-        //list incidents by technician
-        public async Task<IActionResult> ListByTech() {
-            IQueryable<Incident> sportsProContext = _context.Incidents.Include(i => i.Customer).Include(i => i.Product).Include(i => i.Technician);
-            return View(await sportsProContext.ToListAsync());
-}
+        //GET: list incidents by technician - generates a dropdown
+        public async Task<IActionResult> ListByTech() {              
+            ViewData["TechID"] = new SelectList(_context.Technicians, "TechnicianID", "Name");
+            return View();
+        }
+        //POST: list incidents by technician - generates a table of incidents
+        [HttpPost]
+        public async Task<IActionResult> ListByTech(int id)
+        {
+            IQueryable<Incident> sportsProContext = _context.Incidents.Include(i => i.Customer).Include(i => i.Product).Include(i => i.Technician).Where(i => i.TechnicianID == id);
+            ViewBag.TechincianID = id;
+            return View("List",await sportsProContext.ToListAsync());
+        }
+        //POST: list incidents by technician
         // GET: Incidents/Details/5
         public async Task<IActionResult> Details(int? id)
         {

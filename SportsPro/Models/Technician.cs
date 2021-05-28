@@ -7,10 +7,10 @@ namespace SportsPro.Models
     {
 		public int TechnicianID { get; set; }	   
 
-		[Required]
+		[Required(ErrorMessage = "Maximum lenght exceeded"), MaxLength(50)]
 		public string Name { get; set; }
 
-		[Required]
+		[Required(ErrorMessage = "This is not a valid email address")]
 		[DataType(DataType.EmailAddress)]
 		public string Email { get; set; }
 

@@ -15,8 +15,7 @@ namespace SportsPro.Models
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Incident> Incidents { get; set; }
         public DbSet<User> Users { get; set; }
-        
-
+        public DbSet<Registration> Registrations { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Add User seed and table

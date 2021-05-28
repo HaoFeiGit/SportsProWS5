@@ -58,7 +58,7 @@ namespace SportsPro.Controllers
             ViewBag.TechincianID = id;
             return View("List",await sportsProContext.ToListAsync());
         }
-        //POST: list incidents by technician
+
         // GET: Incidents/Details/5
         public async Task<IActionResult> Details(int? id)
         {

@@ -55,7 +55,8 @@ namespace SportsPro.Controllers
         public async Task<IActionResult> ListByTech(int id)
         {
             IQueryable<Incident> sportsProContext = _context.Incidents.Include(i => i.Customer).Include(i => i.Product).Include(i => i.Technician).Where(i => i.TechnicianID == id);
-            ViewBag.TechincianID = id;
+  
+            TempData["Tech"] = sportsProContext.Select(t => t.Technician.Name).First();
             return View("List",await sportsProContext.ToListAsync());
         }
 

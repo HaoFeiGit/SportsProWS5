@@ -10,6 +10,8 @@
 
 <br />
 
+@if (TempData["Tech"] != null)
+{ <h1>Technician: @TempData["Tech"] </h1>}
 <ul class="nav nav-pills">
     <li class="nav-item">
         <a id="all" class="nav-link @(ViewBag.Filter == "all"? "active": "")" asp-controller="Incidents" asp-action="FilterAll">All Incidents</a>
@@ -63,18 +65,18 @@
                 </td>
 
                 <td>
-                    <a class="btn btn-primary btn-large" asp-action="Edit" asp-route-id="@item.IncidentID">Edit</a>
+                    <a class="btn btn-success" asp-action="Edit" asp-route-id="@item.IncidentID">Edit</a>
 
                 </td>
                 <td>
 
-                    <a class="btn btn-primary btn-large" asp-action="Delete" asp-route-id="@item.IncidentID">Delete</a>
+                    <a class="btn btn-success" asp-action="Delete" asp-route-id="@item.IncidentID">Delete</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
 <p>
-    <a class="btn btn-primary btn-large" asp-action="Create">Add Incident</a>
+    <a class="btn btn-success" asp-action="Create">Add Incident</a>
 </p>
 

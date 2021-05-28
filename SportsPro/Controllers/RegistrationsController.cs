@@ -42,7 +42,7 @@ namespace SportsPro.Controllers
         public async Task<IActionResult> GetCustomer(int id)
         {
             IQueryable<Registration> sportsProContext = _context.Registrations.Include(i => i.Customer).Include(i => i.Product).Where(i => i.CustomerID == id);
-            ViewBag.CustomerID = id;
+            TempData["Cust"] = sportsProContext.Select(t => t.Customer.FullName).FirstOrDefault();
             return View("List", await sportsProContext.ToListAsync());
         }
         // GET: Registrations/Details/5

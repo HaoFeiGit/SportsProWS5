@@ -1,9 +1,11 @@
 ﻿@model IEnumerable<SportsPro.Models.Registration>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "List";
 }
-
+@if (TempData["Cust"] != null)
+{<h1>Customer: @TempData["Cust"] </h1><hr>}
+else {<h1>No registrations found for the selected customer</h1>}
 <h1>Manage Registrations</h1>
 
 <table class="table">
@@ -23,14 +25,14 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Customer)
+                    @Html.DisplayFor(modelItem => item.Customer.FullName)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Product.Name)
                 </td>
                 <td>
-                    <a asp-action="Edit" class="btn btn-success" asp-route-id="@item.RegistrationID">Edit</a> 
-    
+                    <a asp-action="Edit" class="btn btn-success" asp-route-id="@item.RegistrationID">Edit</a>
+
                     <a asp-action="Delete" class="btn btn-success" asp-route-id="@item.RegistrationID">Delete</a>
                 </td>
             </tr>

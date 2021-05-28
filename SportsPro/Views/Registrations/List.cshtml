@@ -23,7 +23,7 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Customer.Address)
+                    @Html.DisplayFor(modelItem => item.Customer)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Product.Name)
@@ -39,5 +39,5 @@
 </table>
 
 <p>
-    <a class="btn-success" asp-action="Create">Create New</a>
+    <a class="btn btn-success" asp-action="Create">Create New</a>
 </p>

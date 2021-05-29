@@ -56,7 +56,7 @@ namespace SportsPro.Controllers
         {
             IQueryable<Incident> sportsProContext = _context.Incidents.Include(i => i.Customer).Include(i => i.Product).Include(i => i.Technician).Where(i => i.TechnicianID == id);
   
-            TempData["Tech"] = sportsProContext.Select(t => t.Technician.Name).First();
+            TempData["Tech"] = sportsProContext.Select(t => t.Technician.Name).FirstOrDefault();
             return View("List",await sportsProContext.ToListAsync());
         }
 

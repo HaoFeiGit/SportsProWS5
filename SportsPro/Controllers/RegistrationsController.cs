@@ -68,7 +68,7 @@ namespace SportsPro.Controllers
         // GET: Registrations/Create
         public IActionResult Create()
         {
-            ViewData["CustomerID"] = new SelectList(_context.Customers, "CustomerID", "Address");
+            ViewData["CustomerID"] = new SelectList(_context.Customers, "CustomerID", "FullName");
             ViewData["ProductID"] = new SelectList(_context.Products, "ProductID", "Name");
             return View();
         }
@@ -86,7 +86,7 @@ namespace SportsPro.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(List));
             }
-            ViewData["CustomerID"] = new SelectList(_context.Customers, "CustomerID", "Address", registration.CustomerID);
+            ViewData["CustomerID"] = new SelectList(_context.Customers, "CustomerID", "FullName", registration.CustomerID);
             ViewData["ProductID"] = new SelectList(_context.Products, "ProductID", "Name", registration.ProductID);
             return View(registration);
         }
@@ -104,7 +104,7 @@ namespace SportsPro.Controllers
             {
                 return NotFound();
             }
-            ViewData["CustomerID"] = new SelectList(_context.Customers, "CustomerID", "Address", registration.CustomerID);
+            ViewData["CustomerID"] = new SelectList(_context.Customers, "CustomerID", "FullName", registration.CustomerID);
             ViewData["ProductID"] = new SelectList(_context.Products, "ProductID", "Name", registration.ProductID);
             return View(registration);
         }
@@ -141,7 +141,7 @@ namespace SportsPro.Controllers
                 }
                 return RedirectToAction(nameof(List));
             }
-            ViewData["CustomerID"] = new SelectList(_context.Customers, "CustomerID", "Address", registration.CustomerID);
+            ViewData["CustomerID"] = new SelectList(_context.Customers, "CustomerID", "FullName", registration.CustomerID);
             ViewData["ProductID"] = new SelectList(_context.Products, "ProductID", "Name", registration.ProductID);
             return View(registration);
         }

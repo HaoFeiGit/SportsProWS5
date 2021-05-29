@@ -12,6 +12,7 @@
 
 @if (TempData["Tech"] != null)
 { <h1>Technician: @TempData["Tech"] </h1>}
+else {<h1>No incidents assigned to this technician</h1>}
 <ul class="nav nav-pills">
     <li class="nav-item">
         <a id="all" class="nav-link @(ViewBag.Filter == "all"? "active": "")" asp-controller="Incidents" asp-action="FilterAll">All Incidents</a>
